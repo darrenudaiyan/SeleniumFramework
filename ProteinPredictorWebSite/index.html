@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title id="Title">Udaiyan Protein Predictor - Wizard 1</title>
+</head>
+
+<body onload="SaveProteinOption()">
+
+	<h1>Udaiyan Protein Predictor Setup Wizard 1</h1>
+	
+	<p>Please choose the Protein Sample that will be processed by this Protein Sizer/Predictor.</p>
+	
+	<select id=ProteinOptions onchange="SaveProteinOption()">
+		<option id=ProteinOption1 value="Protein Sample 1" selected>Protein Sample 1</option>
+		<option id=ProteinOption2 value="Protein Sample 2">Protein Sample 2</option>
+		<option id=ProteinOption3 value="Protein Sample 3">Protein Sample 3</option>
+		<option id=ProteinOption4 value="Protein Sample 4">Protein Sample 4</option>
+	</select>
+	
+	<p>Once you select the Sample (noted below) <a href="step2.html" id="LinkStep2">click here</a> for the next step of the wizard.</p>
+
+	<div id="SelectedProtein"></div>
+	
+	<script src="protein.js"></script>
+
+</body>
+
+</html>
