@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title id="Title">Udaiyan Protein Predictor - Wizard 2</title>
+</head>
+
+<body onload="LoadProteinSaveML()">
+
+	<h1>Udaiyan Protein Sizer Setup Wizard 2</h1>
+	
+	<p>The Protein Sample you selected was: <span id="SelectedProtein"></span></p>
+		
+	<p>Please choose the Machine Learning Algorithm that will be used by this Protein Sizer/Predictor.</p>
+	
+	<select id=MLOptions onchange="SaveGetMLOption()">
+		<option id=MLOption1 value="Naive Bayes" selected>Naive Bayes</option>
+		<option id=MLOption2 value="PCA">Principal Component Analysis</option>
+		<option id=MLOption3 value="SVM">Support Vector Machines</option>
+		<option id=MLOption4 value="A3C">Asynchronous Actor-Critic Agents</option>
+	</select>
+	
+	<p>Once you select the ML (noted below) <a href="step3.html" id="LinkStep3">click here</a> for the last step of the wizard.</p>
+
+	<div id="SelectedML"></div>
+	
+	<script src="Protein.js"></script>
+</body>
+
+</html>
